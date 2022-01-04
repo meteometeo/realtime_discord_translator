@@ -1,1 +1,4 @@
 # realtime_discord_translator
+
+リアルタイムでディスコードの言語（トータル107言語）を日本語に翻訳するプログラムです。
+ディスコードのAuthenticationトークンが必要です。
