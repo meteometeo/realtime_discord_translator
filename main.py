@@ -1,5 +1,4 @@
 import websocket, json, threading, time
-from config import token
 from googletrans import Translator
 
 def send_json_request(ws, request):
@@ -27,7 +26,7 @@ event = recieve_json_response(ws)
 heartbeat_interval = event['d']['heartbeat_interval'] / 1000
 threading._start_new_thread(heartbeat, (heartbeat_interval, ws))
 
-token = token
+token = 'こちらにAuthenticationトークンを入力してください'
 payload = {
     'op': 2,
     'd': {
